@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ *{ margin: 0px;
+	padding: 10px;
+ }
+ p
+ {
+	 border: 2px solid green; 
+	width: 30px; 
+	padding: 10px;
+	 
+ }
+ #g_3
+ {
+	 position: absolute;
+    top: 60px;
+    left: 100px;
+   
+ }
+  #g_4
+ {
+	 position: absolute;
+    top: 165px;
+    left: 100px;
+   
+ }
+</style>
+
+	<script>
+
+		function myFunction(newColor) 
+		{
+			if (newColor==='red')
+			{	var elem3= document.getElementById('g_2');
+				elem3.style.color = 'black';
+				var elem4= document.getElementById('g_3');
+				elem4.style.color = 'black';
+				var elem= document.getElementById('g_1');
+				elem.style.color = newColor;
+				var elem2= document.getElementById('g_4');
+				elem2.style.color = newColor
+			}
+			else if(newColor==='blue')
+			{
+				var elem3= document.getElementById('g_1');
+				elem3.style.color = 'black';
+				var elem4= document.getElementById('g_4');
+				elem4.style.color = 'black';
+				var elem= document.getElementById('g_2');
+				elem.style.color = newColor;
+				var elem2= document.getElementById('g_3');
+				elem2.style.color = newColor
+		    }
+		}
+	</script>
+</head>
+<body>
+
+	<button onclick="myFunction('red');">Buttonl</button>
+	<button onclick="myFunction('blue');">Button2</button>
+
+	
+	<div id="g_1">
+		<p> a1</p>
+		<p> a2</p>
+	</div>
+	<div id="g_2">
+		<p> b1</p>
+		<p> b2</p>
+	</div>
+	<div id="g_3">
+		<p>c1</p>
+		<p> c2</p>
+	</div>
+	<div id="g_4">
+		<p> d1</p>
+		<p> d2</p>
+	</div>
+
+</body>
+</html>
+
